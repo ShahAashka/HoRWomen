@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HoRWomen</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="complaint_type">
+        <item>Type of Complaint</item>
+        <item>Urgent</item>
+        <item>Electricity</item>
+        <item>Water</item>
+        <item>Maintenance</item>
+        <item>Miscellaneous</item>
+    </string-array>
+</resources>

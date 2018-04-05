@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.horwomen.SignUpActivity">
+
+   <LinearLayout
+       android:id="@+id/layout_SignUp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/txt_sign"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="30dp"
+           android:text="Sign-Up"
+           android:textAlignment="center"
+           android:textColor="#000000"
+           android:textSize="25dp"
+           />
+
+       <EditText
+           android:id="@+id/edit_rId"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Registeration ID"
+           android:textColorHint="#000000"
+           android:layout_margin="10dp"/>
+
+       <EditText
+           android:id="@+id/edit_uId"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="User ID"
+           android:inputType="number"
+           android:textColorHint="#000000"
+           android:layout_margin="10dp"/>
+
+       <EditText
+           android:id="@+id/edit_pass"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Password"
+           android:inputType="textPassword"
+           android:textColorHint="#000000"
+           android:layout_margin="10dp"/>
+
+       <EditText
+           android:id="@+id/edit_rePass"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Re-enter password"
+           android:inputType="textPassword"
+           android:textColorHint="#000000"
+           android:layout_margin="10dp"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/btn_submit"
+           android:layout_width="wrap_content"
+           android:text="Register"
+           android:textSize="20dp"
+           android:textAllCaps="false"
+           android:layout_marginTop="20dp"
+           android:layout_centerHorizontal="true"
+           android:background="#1a237e"
+           android:textColor="#ffffff"
+           android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/text_log"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Existing User? Click to Login"
+           android:layout_margin="10dp"
+           android:textAlignment="center"
+           android:linksClickable="true"
+           android:textColor="#000000"/>
+
+
+
+
+
+
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
