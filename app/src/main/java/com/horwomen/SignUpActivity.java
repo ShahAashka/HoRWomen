@@ -74,6 +74,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             edit_pass.setError("Atleast one special character required");
         }
         else {
+
+
+            String method = "register";
+            BackgroundTask backgroundTask = new BackgroundTask(this);
+            backgroundTask.execute(method,rid,uid,pass);
+            finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
 
@@ -89,6 +95,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         if(view == btn_submit){
+            finish();
             registerUser();
 
         }
